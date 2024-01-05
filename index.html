@@ -1,15 +1,106 @@
-<h1>S k n k w o r k s</h1>
-<style>
-h1 {
-  text-align: center;
-  font-size: 160px;
-  .blink {
-  animation: blinker 1s step-start infinite;
-}
-
-@keyframes blinker {
-  50% {
-    opacity: 0;
-  }
-}
-</style>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sknkworks</title>
+        <style>
+            body {
+                font-family: "Times New Roman", serif;
+                margin: 0;
+                padding: 0;
+                background-color: white;
+            }
+            .header {
+                text-align: center;
+                margin: 0;
+                border-bottom: 1px solid #e7e7e7;
+            }
+            .title {
+                font-weight: normal;
+                font-size: 100px;
+            }
+            .site-content {
+                display: flex;
+                flex-wrap: wrap;
+                width: 50%;
+                margin: 0 auto; /* Centers the site-content */
+                min-height: 100vh;
+            }
+            .blog-content {
+                flex: 3;
+                padding: 20px;
+            }
+            .sidebar {
+                flex: 1;
+                background-color: #f2f2f2;
+                padding: 20px;
+                box-sizing: border-box;
+            }
+            .post-entry {
+                margin-bottom: 15px;
+            }
+            .post-title {
+                font-weight: bold;
+                color: #333;
+                margin: 0;
+            }
+            .post-date {
+                font-size: 0.8em;
+                color: #666;
+                margin-bottom: 5px;
+            }
+            .post-description {
+                margin: 0;
+                font-size: 0.9em;
+                color: #333;
+            }
+            .blink {
+                animation: blinker 1s step-start infinite;
+            }
+            @keyframes blinker {
+                50% {
+                    opacity: 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1 class="blink title">sknkworks</h1>
+        </div>
+        <div class="site-content">
+            <div class="blog-content">
+                <h2>Blog Post Title</h2>
+                <p>
+                    This is the main content of the blog post. Here you can put
+                    your article, images, videos, etc.
+                </p>
+                <!-- Additional blog content goes here -->
+            </div>
+            <div class="sidebar">
+                <h3>Recent Posts</h3>
+                <div class="post-entry">
+                    <p class="post-title">Post Title 1</p>
+                    <p class="post-date">January 1, 2024</p>
+                    <p class="post-description">
+                        A brief description of Post 1.
+                    </p>
+                </div>
+                <div class="post-entry">
+                    <p class="post-title">Post Title 2</p>
+                    <p class="post-date">December 25, 2023</p>
+                    <p class="post-description">
+                        A brief description of Post 2.
+                    </p>
+                </div>
+                <div class="post-entry">
+                    <p class="post-title">Post Title 3</p>
+                    <p class="post-date">December 18, 2023</p>
+                    <p class="post-description">
+                        A brief description of Post 3.
+                    </p>
+                </div>
+                <!-- More entries can be added here -->
+            </div>
+        </div>
+    </body>
+</html>
