@@ -3,5 +3,15 @@
 h1 {
   text-align: center;
   font-size: 160px;
+  .blink {
+  animation: blinker 1s step-start infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 </style>
+{
+<div class="blink">BLINK</div>}
